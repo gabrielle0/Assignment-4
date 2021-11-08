@@ -11,6 +11,8 @@ def remaining_Money (money, apples):
     remaining_Money_ = money % apples
     return remaining_Money_
 
+def display (maximum_Apples, change):
+    print (f"You can buy {maximum_Apples} apples and your change is {change} pesos.")
 
 #Steps:
 #1.) Enter amount of money and price of an apple. Save to variables. 
@@ -19,3 +21,4 @@ money, apples  = enter_Money_Apple ()
 maximum_Apples = max_Apples (money, apples)
 change = remaining_Money (money, apples)
 #3.) Display the maximum number of apples that you can buy and the remaining money that you will have.
+display (maximum_Apples, change)
